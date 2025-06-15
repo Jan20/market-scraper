@@ -14,25 +14,6 @@ Naive project for scraping the constituents of stock markets from Wikipedia.
 - Docker support for containerized deployment.
 - Infrastructure as code with Terraform for deployment.
 
-## Project Structure
-
-```sh
-.
-├── app/
-│ ├── controllers/
-│ ├── entities/
-│ └── services/
-├── deployment/
-│ └── main.tf
-├── scripts/
-│ ├── dax.sh
-│ └── nasdaq.sh
-├── main.py
-├── requirements.txt
-├── Dockerfile
-└── README.md
-```
-
 ## Getting Started
 
 ### Prerequisites
@@ -73,8 +54,10 @@ cp .env.example .env
 
 #### Run the Scraper
 
+Source the .env file and spin up the project:
+
 ```sh
-python main.py
+source .env && python main.py
 ```
 
 #### Fetch DAX or NASDAQ constituents via scripts

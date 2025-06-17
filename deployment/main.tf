@@ -13,7 +13,7 @@ resource "docker_image" "market-scraper" {
 }
 
 resource "docker_container" "market-scraper" {
-  name  = "flask_app"
+  name  = "market-scraper"
   image = docker_image.market-scraper.image_id
 
   ports {

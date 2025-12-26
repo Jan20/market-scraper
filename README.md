@@ -16,32 +16,22 @@ Naive project for scraping the constituents of stock markets from Wikipedia.
 
 ## Getting Started
 
-### Prerequisites
-
-- Python 3.12+
-- [pip](https://pip.pypa.io/en/stable/)
-- (Optional) [Docker](https://www.docker.com/)
-- (Optional) [Terraform](https://www.terraform.io/)
-
-### Installation
-
 **Step 1:** Clone the repository:
 
 ```sh
-git clone https://github.com/yourusername/market-scraper.git
-cd market-scraper
+git clone https://github.com/Jan20/market-scraper.git && cd market-scraper
 ```
 
 **Step 2:** Create a virtual environment:
 
 ```sh
-pip install -r requirements.txt
+python -m venv venv
 ```
 
 **Step 3:** Install dependencies:
 
 ```sh
-python -m venv venv
+pip install -r requirements.txt
 ```
 
 **Step 4:** Copy the example environment file and configure as needed:
@@ -63,7 +53,7 @@ source .env && python main.py
 #### Fetch DAX or NASDAQ constituents via scripts
 
 ```sh
-source .env && ./scripts/nasdaq.sh
+source .env && ./scripts/dax.sh
 source .env && ./scripts/nasdaq.sh
 ```
 

@@ -1,9 +1,6 @@
-from dataclasses import dataclass
+from enum import Enum
 
 
-@dataclass
-class Constituent:
-    symbol: str
-    name: str
-    sector: str
-    subIndustry: str = ""
+class Market(str, Enum):
+    NASDAQ = "nasdaq"
+    DAX = "dax"
